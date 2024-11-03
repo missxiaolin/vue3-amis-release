@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { RouterTy } from "@/types/router";
 
-// demo
 export const constantRoutes: RouterTy = [
 	{
 		path: "/",

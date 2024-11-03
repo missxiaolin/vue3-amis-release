@@ -2,7 +2,6 @@
 	<div class="v3-layouts-header reverse-darkmode">
 		<div class="v3-layouts-left">
 			<MenuFoldOutlined :style="{ fontSize: '25px', color: '#fff' }" @click="collapseMenu" />
-			<fl-icon class="iflorens-a-Florens-Logo" :style="{ color: '#FDF47D' }"></fl-icon>
 		</div>
 	</div>
 </template>

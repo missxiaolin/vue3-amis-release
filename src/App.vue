@@ -1,11 +1,3 @@
-<!--
- * @Author: wukunling 13022195532@163.com
- * @Date: 2024-09-27 13:13:58
- * @LastEditors: wukunling 13022195532@163.com
- * @LastEditTime: 2024-10-30 15:59:04
- * @FilePath: /iflorens-web-v4/src/App.vue
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE{}
--->
 <template>
 	<div class="content-base">
 		<AConfigProvider :locale="enGb" :theme="themeData" :getPopupContainer="getPopupContainer">
@@ -40,7 +32,7 @@ export default {
 
 		isMockLayouts.value = false;
 
-		const routeWhite = ref(["/login"]);
+		const routeWhite = ref(["/login", "/"]);
 
 
 		const getPopupContainer:any = (el: any, dialogContext: { getDialogWrap: () => any; }) => {

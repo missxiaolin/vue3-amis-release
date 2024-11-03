@@ -1,0 +1,17 @@
+
+
+@mixin fontWeight($weight) { 
+	@if $weight == 400 {
+        font-variation-settings: 'wght' 600;font-weight: 500;
+	} @else if $weight == normal { 
+        font-variation-settings: 'wght' 600;font-weight: 500;
+	} @else if $weight == regular { 
+        font-variation-settings: 'wght' 600;font-weight: 500;
+	} @else if $weight == 500 { 
+        font-variation-settings: 'wght' 600;font-weight: 500;
+	} @else if $weight == 700 { 
+        font-variation-settings: 'wght' 700;font-weight: bold;
+	} @else if $weight == bold { 
+        font-variation-settings: 'wght' 700;font-weight: bold;
+	} 
+}

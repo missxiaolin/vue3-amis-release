@@ -1,0 +1,13 @@
+###
+ # @Author: wangweidong
+ # @Date: 2024-10-18 13:39:43
+ # @LastEditors: wangweidong
+ # @LastEditTime: 2024-10-21 16:47:00
+ # @FilePath: /iflorens-web-v4/.husky/pre-commit
+ # @Description: 
+### 
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run lint:eslint
+# npm run commit

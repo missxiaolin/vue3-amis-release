@@ -1,0 +1,15 @@
+node_modules
+.DS_Store
+dist-ssr
+*.local
+.vscode
+.history
+.eslintcache
+
+# Automatic generation components 
+# Open when you has not create new components
+src/components.d.ts
+
+components.d.ts
+auto-imports.d.ts
+.eslintcache

@@ -1,0 +1,133 @@
+/* 基础样式修改 */
+*{
+	font-family: Nunito;
+}
+.tool-bar {
+	padding: 10px 0;
+	.ant-btn {
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&-right {
+		text-align: right;
+	}
+}
+/* flex布局 */
+.flex-vertical {
+	display: flex;
+	align-items: center;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-middle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-vertical-between {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@keyframes fadenum {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+// 统一修改滚动条
+div::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+div::-webkit-scrollbar-track {
+	background: rgb(239, 239, 239);
+	border-radius: 2px;
+}
+
+div::-webkit-scrollbar-thumb {
+	background: #bfbfbf;
+	border-radius: 4px;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+	background: #bfbfbf;
+}
+
+// 页面下方按钮区
+.buttons-box {
+	height: 64px;
+	width: 100%;
+	background: #f8f8f8; //#f8f8f8
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// 字段必输样式
+.columns-input {
+	display: flex;
+}
+.columns-input::before {
+	display: inline-block;
+	margin-right: 4px;
+	color: #f5222d;
+	line-height: 26px;
+	font-size: 12px;
+	font-family: SimSun, sans-serif;
+	content: "*";
+}
+.input-danger {
+	border-color: #f5222d;
+	:deep(.ant-select-selection) {
+		border-color: #f5222d;
+	}
+}
+
+// 操作信息
+.desc-info {
+	width: 100%;
+	padding: 0 20px;
+	margin-bottom: 15px;
+	position: relative;
+	&-title {
+		width: 80px;
+		text-align: right;
+		margin-right: 10px;
+		color: #222;
+	}
+	&-content {
+		position: absolute;
+		padding: 0 20px 0 80px;
+		top: 0;
+		text-align: left;
+		word-wrap: break-word;
+	}
+}
+
+// 查询条件表单样式
+.ant-advanced-search-form .ant-form-item {
+	display: flex;
+}
+.ant-advanced-search-form .ant-form-item-control-wrapper {
+	flex: 1;
+}

@@ -1,0 +1,33 @@
+.ant-form-item {
+    /*  重置表单校验样式 */
+    .ant-form-item-explain-error {
+        width: fit-content;
+        padding: 1px 8px;
+        font-size: 12px;
+        border-radius: 4px;
+        background-color: #fff1f0;
+        display: flex;
+        align-items: center;
+        min-height: 22px;
+        line-height: 1.5;
+        margin-top: 2px;
+    }
+
+    /*  新增表单校验icon */
+    .ant-form-item-explain-error::before {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("~/src/assets/img/icon-error.svg");
+        color: #f5222d;
+        margin-right: 4px;
+        content: "";
+        vertical-align: middle;
+    }
+}
+
+.ant-input {
+    height: 32px;
+}

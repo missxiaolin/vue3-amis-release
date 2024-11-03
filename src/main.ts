@@ -8,12 +8,9 @@ import "@/assets/css/tailwindcss.css";
 import "@/assets/css/index.scss";
 import { goPage } from "@/utils/route";
 
-const mount = () => {
-	const app = createApp(App);
-	app.use(store);
-	app.use(router);
-	app.config.globalProperties.$goPage = goPage;
-	app.mount("#app-main");
-};
 
-mount();
+const app = createApp(App);
+app.use(store);
+app.use(router);
+app.config.globalProperties.$goPage = goPage;
+app.mount("#app-main");

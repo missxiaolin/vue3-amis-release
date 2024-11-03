@@ -39,7 +39,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
 					// modifyVars: generateModifyVars(),
 					// javascriptEnabled: true,
 					// additionalData: '@import "./src/css/index.scss";',
-					additionalData: `@import "@/assets/css/mixins.scss";`
+					// additionalData: `@import "@/assets/css/mixins.scss";`
 				},
 			},
 		},
